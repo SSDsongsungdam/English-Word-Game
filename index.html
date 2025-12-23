@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>영어 문장 완성 게임</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>🧩 영어 문장 완성 게임</h1>
+
+    <div class="user-box">
+      <input id="username" placeholder="이름 입력" />
+      <!-- 🔥 disabled 제거 -->
+      <button onclick="startGame()">게임 시작</button>
+    </div>
+
+    <div class="status">
+      <span id="progress"></span>
+      <span id="score"></span>
+    </div>
+
+    <div class="card-box">
+      <h3>한글 문장</h3>
+      <p id="kor"></p>
+    </div>
+
+    <div id="cards" class="cards"></div>
+
+    <h3>문장을 완성하세요</h3>
+    <div id="answer" class="answer"></div>
+
+    <div class="buttons">
+      <button onclick="checkAnswer()">정답 확인</button>
+      <button onclick="reshuffle()">다시 섞기</button>
+    </div>
+  </div>
+
+  <!-- 반드시 body 맨 아래 -->
+  <script src="questions.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

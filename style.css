@@ -1,0 +1,70 @@
+
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+}
+
+.app {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+h1 { text-align: center; }
+
+.user-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.user-box input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.cards, .answer {
+  min-height: 70px;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.cards { background: #f1f5ff; }
+
+.answer { border: 2px dashed #aaa; }
+
+.card {
+  display: inline-block;
+  padding: 10px 14px;
+  margin: 6px;
+  background: #667eea;
+  color: white;
+  border-radius: 20px;
+  cursor: grab;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #764ba2;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #ccc;
+}
